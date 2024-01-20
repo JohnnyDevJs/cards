@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Black Han Sans", sans-serif;
+  background-color: rgb(52, 166, 170);
+  height: 100vh;
+}
+
+button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 5px solid #fff;
+}
+
+#closeCards {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+main, section{
+  height: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1280px;
+  background-color: blue;
+  border: 20px solid yellow;
+  border-radius: 15px;
+  margin: auto;
+  padding: 15px;
+}
+
+.container.one {
+background-color: red;
+}
+
+h1, h3, p {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 120px;
+  font-style: italic;
+  text-decoration: underline;
+  transition: all .7s;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+h1:hover {
+  color:brown;
+  transform: translateY(-20px);
+}
+
+h3 {
+  font-size: 80px;
+}
+
+p {
+  font-size: 40px;
+}
+
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: all .7s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.box {
+  transition: all .7s;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.b1 {
+  transition-delay: 100ms;
+}
+
+.b2 {
+  transition-delay: 500ms;
+}
+
+.show .box {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
